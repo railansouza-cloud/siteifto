@@ -62,7 +62,7 @@ body {
     margin-bottom: 1rem;
 }
 
-/* BOTÕES ORGANIZADOS */
+
 .botoes {
     display: flex;
     flex-direction: column;
@@ -108,7 +108,7 @@ body {
     display: inline-block;
 }
 
-/* NOVA SEÇÃO COM IMAGEM */
+
 .nova-secao {
     background-image: url('../img/transformers_age_of_extinction_imax_poster-wide.jpg');
     background-size: cover;
@@ -143,7 +143,7 @@ body {
     margin-bottom: 1.5rem;
 }
 
-/* DISPOSITIVOS */
+
 .dispositivos {
     text-align: center;
 }
@@ -162,7 +162,7 @@ body {
     font-size: 2rem;
 }
 
-/* RODAPÉ */
+
 .rodape {
     text-align: center;
     margin: 5rem 3rem;
