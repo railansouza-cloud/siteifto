@@ -13,13 +13,16 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--cor-de-fundo);
     color: var(--branco-principal);
     font-family: var(--fonte-principal);
     font-size: 1rem;
 }
-
 
 .principal {
     background-image: url('../img/new_fundo\ 1.png');
@@ -38,8 +41,6 @@ body {
 .container__caixa {
     margin-left: 2rem;
     margin-right: 10rem;
-    margin-top: 0;
-    margin-bottom: 0;
 }
 
 .container__titulo {
@@ -61,7 +62,7 @@ body {
     margin-bottom: 1rem;
 }
 
-
+/* BOTÕES ORGANIZADOS */
 .botoes {
     display: flex;
     flex-direction: column;
@@ -74,7 +75,6 @@ body {
     border: 2px solid var(--branco-principal);
     transition: 0.3s;
 }
-
 
 .container__botao__secundario:hover {
     background-color: var(--branco-principal);
@@ -96,8 +96,7 @@ body {
 
 .descricao__titulo {
     font-size: 3rem;
-    color: var(--branco-principal);
-    margin-bottom: 0.1rem;
+    margin-bottom: 0.5rem;
 }
 
 .descricao__texto {
@@ -105,10 +104,46 @@ body {
 }
 
 .secundario__botao {
-    margin-top: 0.3rem;
+    margin-top: 0.5rem;
     display: inline-block;
 }
 
+/* NOVA SEÇÃO COM IMAGEM */
+.nova-secao {
+    background-image: url('../img/transformers_age_of_extinction_imax_poster-wide.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.nova-secao::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.nova-secao__conteudo {
+    position: relative;
+    z-index: 1;
+}
+
+.nova-secao h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.nova-secao p {
+    margin-bottom: 1.5rem;
+}
+
+/* DISPOSITIVOS */
 .dispositivos {
     text-align: center;
 }
@@ -125,9 +160,9 @@ body {
 
 .lista__item {
     font-size: 2rem;
-    color: var(--branco-principal);
 }
 
+/* RODAPÉ */
 .rodape {
     text-align: center;
     margin: 5rem 3rem;
@@ -166,10 +201,11 @@ body {
     color: var(--cor-de-fundo);
 }
 
+/* RESPONSIVO */
 @media screen and (max-width: 768px) {
     .container {
         display: block;
-        background-image: none;
+        height: auto;
     }
 
     .container__caixa {
